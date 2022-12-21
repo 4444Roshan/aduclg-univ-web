@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com//css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html" target="_blank">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-book">
+        <h1>Contact Us</h1></div>
+    </section>
+  
+    <!--contact-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.211236031635!2d77.08372118631739!3d28.620685320134378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04afb8dbcfe1%3A0xaff19e718be2136b!2sMaharaja%20Surajmal%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1671623605103!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>xyz road ,abc building</h5>
+                        <p>janakpuri, new delhi</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 123456789</h5>
+                        <p>mon-sat,10am -4pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>info@mail.com</h5>
+                        <p>email us query</p>
+                    </span>
+                </div>
+            </div>
+        
+            <div class="contact-col">
+            <form action="fromhandler.php" method="post">
+                <input type="text" name="name" placeholder="enter your name" required>
+                <input type="email" name="email" placeholder="enter email address" required>
+                <input type="text" name="subject" placeholder="enter your subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">send message</button>
+            </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+   <!--Footer-->
+    <section. class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo voluptate, vero beatae unde at, nam id <br>
+            dolore voluptates in provident hic dolorem numquam quam dignissimos placeat assumenda. Ea, fugiat?</p>
+            <div class="icons">
+                <a href="https://m.facebook.com/msitnewdelhi/?_rdr"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/msitnewdelhi?t=G_i_U0kRl1RIF6_Yt-w3sQ&s=08"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ggsipuindia/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/maharaja-surajmal-institute-of-technology-msitnewdelhi/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com"><i class="fa fa-github"></i></a>
+            </div>
+            <p> Made by r05han Maurya</p>
+    </section.>
+</body>
+</html>
